@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import styles from "./Timer.module.css";
+import Text from "../UI/Text/Text";
 
 const Timer = props => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
@@ -8,7 +10,7 @@ const Timer = props => {
     useEffect(() => {
         let interval;
         if(currentDateTime.getTime() < targetDateTime.getTime()){
-            interval = setInterval(()=>{
+            interval = setInterval(() => {
                 setCurrentDateTime(new Date());
             }, 999)
         } else {
@@ -26,11 +28,15 @@ const Timer = props => {
     const hoursUntilMatch = Math.floor(minutesUntilMatch / 60);
     const daysUntilMatch = Math.floor(hoursUntilMatch / 24);
 
-    const timeString = daysUntilMatch + " : " + (hoursUntilMatch % 24)+ " : " + (minutesUntilMatch % 60) + " : " + (secondsUntilMatch % 60);
+    const formattedSecondsUntilMatch = secondsUntilMatch % 60;
+    const formattedMinutesUntilMatch = minutesUntilMatch % 60;
+    const formattedHoursUntilMatch = hoursUntilMatch % 24;
+
+    const timeString = daysUntilMatch + " : " + formattedHoursUntilMatch + " : " + formattedMinutesUntilMatch + " : " + formattedSecondsUntilMatch;
 
     return(
-        <div>
-            TIMER
+        <div className={styles.timerContainer}>
+            <Text>{timeString}</Text>
         </div>
     )
 }

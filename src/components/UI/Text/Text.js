@@ -4,7 +4,7 @@ import styles from "./Text.module.css";
 const Text = props => {
     return(
         <div className={styles.textContainer}>
-            <p className={styles.text}>{props.text}</p>
+            <p className={styles.text}>{props.children}</p>
         </div>
     )
 }
