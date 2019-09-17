@@ -7,15 +7,26 @@ const Timer = props => {
 
     useEffect(() => {
         let interval;
-        if(currentDateTime < targetDateTime){
+        if(currentDateTime.getTime() < targetDateTime.getTime()){
             interval = setInterval(()=>{
                 setCurrentDateTime(new Date());
-            }, 1000)
+            }, 999)
         } else {
             setIsGameTime(true);
         }
         return () => clearInterval(interval);
-    }, [currentDateTime, isGameTime])
+    }, [currentDateTime, isGameTime, targetDateTime])
+
+    const currentDateTimeInMilliseconds = currentDateTime.getTime();
+    const targetDateTimeInMilliseconds = targetDateTime.getTime();
+
+    const milliSecondsUntilMatch = targetDateTimeInMilliseconds - currentDateTimeInMilliseconds;
+    const secondsUntilMatch = Math.floor(milliSecondsUntilMatch / 1000);
+    const minutesUntilMatch = Math.floor(secondsUntilMatch / 60);
+    const hoursUntilMatch = Math.floor(minutesUntilMatch / 60);
+    const daysUntilMatch = Math.floor(hoursUntilMatch / 24);
+
+    const timeString = daysUntilMatch + " : " + (hoursUntilMatch % 24)+ " : " + (minutesUntilMatch % 60) + " : " + (secondsUntilMatch % 60);
 
     return(
         <div>
