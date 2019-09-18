@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+import Text from "../UI/Text/Text";
 
 const Navbar = props => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.navLeft}>
-                Left
+                <Text>Left</Text>
             </div>
             <div className={styles.navRight}>
-                Right
+                <Text>Right</Text>
             </div>
         </div>
     )

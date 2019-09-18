@@ -1,4 +1,7 @@
 .timerContainer {
     border : 2px solid black;
     padding: 3rem;
+    width: 100%;
+    max-width: 20rem;
+    min-width: 10rem;
 }
