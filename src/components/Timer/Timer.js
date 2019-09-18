@@ -36,7 +36,7 @@ const Timer = props => {
 
     return(
         <div className={styles.timerContainer}>
-            <Text>{timeString}</Text>
+            <Text specialText={true}>{timeString}</Text>
         </div>
     )
 }

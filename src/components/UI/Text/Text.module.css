@@ -6,7 +6,16 @@
     width: 100%;
 }
 
+.navBarTextContainer{
+    width: 100%;
+}
+
 .text {
     font-family: 'Merriweather', serif;
     font-size : 1rem;
+}
+
+.specialText {
+    font-family: 'Merriweather', serif;
+    font-size : 2.5rem;
 }
