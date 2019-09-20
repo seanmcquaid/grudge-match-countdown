@@ -34,9 +34,15 @@ const Timer = props => {
 
     const timeString = daysUntilMatch + " : " + formattedHoursUntilMatch + " : " + formattedMinutesUntilMatch + " : " + formattedSecondsUntilMatch;
 
+    const beforeGameTimeContent = <Text specialText={true}>{timeString}</Text>;
+    const afterGameTimeContent = "This will contain the stream link";
+
+    const content = isGameTime ? afterGameTimeContent : beforeGameTimeContent; 
+
+
     return(
         <div className={styles.timerContainer}>
-            <Text specialText={true}>{timeString}</Text>
+            {content}
         </div>
     )
 }
