@@ -6,10 +6,10 @@ const Navbar = props => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.navLeft}>
-                <Text navBarText={true}>Left</Text>
+                <Text navBarText={true} leftNav={true}>Left</Text>
             </div>
             <div className={styles.navRight}>
-                <Text navBarText={true}>Right</Text>
+                <Text navBarText={true} rightNav={true}>Right</Text>
             </div>
         </div>
     )
