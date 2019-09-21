@@ -32,7 +32,10 @@ const Timer = props => {
     const formattedMinutesUntilMatch = minutesUntilMatch % 60;
     const formattedHoursUntilMatch = hoursUntilMatch % 24;
 
-    const timeString = daysUntilMatch + " : " + formattedHoursUntilMatch + " : " + formattedMinutesUntilMatch + " : " + formattedSecondsUntilMatch;
+    const timeString = daysUntilMatch + 
+        " : " + (formattedHoursUntilMatch.toString().length === 1 ? "0" : "") + formattedHoursUntilMatch + 
+        " : " + (formattedMinutesUntilMatch.toString().length === 1 ? "0" : "") + formattedMinutesUntilMatch + 
+        " : " + (formattedSecondsUntilMatch.toString().length === 1 ? "0" : "") +formattedSecondsUntilMatch;
 
     const beforeGameTimeContent = <Text specialText={true}>{timeString}</Text>;
     const afterGameTimeContent = "This will contain the stream link";
