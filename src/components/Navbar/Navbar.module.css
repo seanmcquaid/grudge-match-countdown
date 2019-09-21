@@ -21,3 +21,8 @@
     justify-content: flex-end;
     align-content: center;
 }
+
+.navRightLink {
+    text-decoration: none;
+    color : #99d8d0;
+}

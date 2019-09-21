@@ -6,10 +6,14 @@ const Navbar = props => {
     return (
         <div className={styles.navbarContainer}>
             <div className={styles.navLeft}>
-                <Text navBarText={true} leftNav={true}>Left</Text>
+                <Text navBarText={true} leftNav={true}>
+                    <span>T</span><span>S</span>Powerline
+                </Text>
             </div>
             <div className={styles.navRight}>
-                <Text navBarText={true} rightNav={true}>Right</Text>
+                <Text navBarText={true} rightNav={true}>
+                    <a className={styles.navRightLink} rel="noopener noreferrer" href="https://www.youtube.com/channel/UC2INmP2FrP9Zv_4QfOrmKww/featured" target="_blank">Youtube</a>
+                </Text>
             </div>
         </div>
     )
