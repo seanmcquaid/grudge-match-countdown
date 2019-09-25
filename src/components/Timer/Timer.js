@@ -9,7 +9,7 @@ const Timer = props => {
 
     useEffect(() => {
         let interval;
-        if(currentDateTime.getTime() > targetDateTime.getTime()){
+        if(currentDateTime.getTime() < targetDateTime.getTime()){
             interval = setInterval(() => {
                 setCurrentDateTime(new Date());
             }, 999)
@@ -40,11 +40,11 @@ const Timer = props => {
     const beforeGameTimeContent = <Text specialText={true}>{timeString}</Text>;
     const afterGameTimeContent = <iframe className={styles.youtubeVideo} title="video link" src="https://www.youtube.com/embed/btDaG3Wqm0I" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>;
     
-    const gameTimeContainerStyles = isGameTime ? styles.afterGameTimeContainer : styles.beforeGameTimeContainer;
+    const gameTimeContainerStyles = currentDateTime.getTime() < targetDateTime.getTime() ? styles.beforeGameTimeContainer : styles.beforeGameTimeContainer;
     
     return(
         <div className={gameTimeContainerStyles}>
-            {isGameTime ? afterGameTimeContent : beforeGameTimeContent}
+            {currentDateTime.getTime() < targetDateTime.getTime() ? beforeGameTimeContent : afterGameTimeContent}
         </div>
     )
 }
