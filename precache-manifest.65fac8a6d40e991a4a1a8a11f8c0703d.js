@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd215042b88db2773fa86cd3b322f091",
+    "revision": "f582dc4fcb30b580a92a0670997da7b9",
     "url": "/grudge-match-countdown/index.html"
   },
   {
