@@ -1,0 +1,22 @@
+.sectionHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 50rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.titleText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin : 0.5rem;
+}
+
+.subTitleText {
+    font-family: 'Merriweather', serif;
+    font-size : 1.25rem;
+}

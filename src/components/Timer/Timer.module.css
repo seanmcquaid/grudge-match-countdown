@@ -1,0 +1,21 @@
+.beforeGameTimeContainer {
+    border : 4px solid #70416d;
+    padding: 3rem;
+    width: 100%;
+    max-width: 20rem;
+    min-width: 10rem;
+}
+
+.afterGameTimeContainer {
+    border : 4px solid #70416d;
+    padding: 3rem;
+    width: 100%;
+    max-width: 40rem;
+    height: 20rem;
+    min-width: 30rem;
+}
+
+.youtubeVideo {
+    width: 100%;
+    height: 100%;
+}
