@@ -5,7 +5,7 @@ import Text from "../UI/Text/Text";
 const Timer = props => {
     const [currentDateTime, setCurrentDateTime] = useState(new Date());
     const [isGameTime, setIsGameTime] = useState(false);
-    const targetDateTime = new Date("October 12, 2019 19:00:00 GMT");
+    const targetDateTime = new Date("October 12, 2019 17:00:00 EST");
 
     useEffect(() => {
         let interval;
