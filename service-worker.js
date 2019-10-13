@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/grudge-match-countdown/precache-manifest.65fac8a6d40e991a4a1a8a11f8c0703d.js"
+  "/grudge-match-countdown/precache-manifest.be8be4beba8ec318395ff8285745972a.js"
 );
 
 self.addEventListener('message', (event) => {
