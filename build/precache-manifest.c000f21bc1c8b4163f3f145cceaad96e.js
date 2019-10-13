@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e139ee8ce316e5a5161a48f0ad63eb88",
+    "revision": "26811c07037a9be77dbd048fde4cf7bd",
     "url": "/grudge-match-countdown/index.html"
   },
   {
-    "revision": "1689be35ceb06d5632b5",
+    "revision": "35f34f3a631eb658e15e",
     "url": "/grudge-match-countdown/static/css/main.f5ad492f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/grudge-match-countdown/static/js/2.ecdb59b7.chunk.js"
   },
   {
-    "revision": "1689be35ceb06d5632b5",
-    "url": "/grudge-match-countdown/static/js/main.7c81d8be.chunk.js"
+    "revision": "35f34f3a631eb658e15e",
+    "url": "/grudge-match-countdown/static/js/main.9def324f.chunk.js"
   },
   {
     "revision": "9190e8767a8b1477ad38",
