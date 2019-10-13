@@ -38,7 +38,7 @@ const Timer = props => {
         " : " + (formattedSecondsUntilMatch.toString().length === 1 ? "0" : "") +formattedSecondsUntilMatch;
 
     const beforeGameTimeContent = <Text specialText={true}>{timeString}</Text>;
-    const afterGameTimeContent = <iframe className={styles.youtubeVideo} title="Stream Link" src="https://www.youtube.com/embed/W0DLTB3uVPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+    const afterGameTimeContent = <iframe className={styles.youtubeVideo} title="Stream Link" src="https://www.youtube.com/watch?v=BRo7v3VTz7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
     
     const gameTimeContainerStyles = isGameTime ? styles.afterGameTimeContainer : styles.beforeGameTimeContainer;
     
